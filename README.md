@@ -41,3 +41,15 @@ Delete a Blob like this
 boolean deleted = client.delete(path);
 // ...
 ```
+
+## Hosting your own blobstorage Server
+
+In order to host your own blobstorage server, follow the steps below:
+
+- Clone this repository.
+- Configure the db.url, db.username and db.password context parameters in your servlet container.
+- Execute the [doc/init-table.sql](doc/init-table.sql) SQL script on the target machine.
+- Add the mysql driver jar to your servlet container or the WEB-INF/lib folder of the blobstorage project.
+- Build and deploy the blobstorage.war web archive.
+
+You are now ready to use the BlobStorageClient agains your server's blobstorage base URL.
