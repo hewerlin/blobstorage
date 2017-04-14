@@ -1,6 +1,10 @@
 # blobstorage
 
-POCZone.net blobstorage is a simple Java API for byte-array storage.
+[POCZone.net](https://poczone.net/) blobstorage is a simple Java API for byte-array storage.
+
+It is used as a storage engine for various [POCZone.net](https://poczone.net/) applications.
+
+The blobstorage service offers a straight-forward HTTP API with POST/GET/DELETE functionality. The blobs are stored in a SQL database. Clients can access the blobs from anywhere via the HTTP API or the Java BlobStorageClient accessor class.
 
 ## Client Usage
 
